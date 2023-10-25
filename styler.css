@@ -15,13 +15,8 @@ a {
   text-decoration: none; /* Remove underline from links */
 }
 
-a:hover {
-  color: white;
-  background-color: black;
-}
-
 .container a:hover {
-  background-color: black; /* Change background color to black on hover for links within the container */
+  text-decoration: underline; /* Add underline back to links on hover */
 }
 
 /* Media Query for Smartphones */
@@ -31,3 +26,4 @@ a:hover {
     padding: 10px 15px 10px 15px;
   }
 }
+
