@@ -13,15 +13,16 @@
 a {
   color: black;
   text-decoration: underline; /* Add underline to links */
+  transition: background-color 0.3s; /* Add a smooth transition for the background color change */
 }
 
 a:hover {
   color: white;
-  background-color: black;
+  background-color: black; /* Change background color to black on hover */
 }
 
 .container a:hover {
-  background-color: black;
+  background-color: black; /* Change background color to black on hover for links within the container */
 }
 
 /* Media Query for Smartphones */
