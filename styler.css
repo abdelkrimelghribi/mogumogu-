@@ -2,16 +2,30 @@
   font-family: standard;
   src: url(Standard-master/standard-book.otf);
 }
+
 .container {
   font-family: standard;
   font-size: 5vw;
-  padding-top: -10px;
+  padding-top: 10px;
   padding-left: 35px;
   padding-right: 25px;
+  text-align: center;
 }
+
 a {
   color: black;
+  text-decoration: none;
 }
+
 .container a:hover {
   color: white;
+}
+
+/* Media Query for Smartphones */
+@media (max-width: 768px) {
+  .container {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+    padding-left: 15px; /* Adjust padding for smaller screens */
+    padding-right: 15px; /* Adjust padding for smaller screens */
+  }
 }
