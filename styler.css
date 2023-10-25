@@ -2,32 +2,16 @@
   font-family: standard;
   src: url(Standard-master/standard-book.otf);
 }
-
 .container {
   font-family: standard;
   font-size: 5vw;
-  padding: 10px 35px 10px 35px;
-  text-align: left;
+  padding-top: -10px;
+  padding-left: 35px;
+  padding-right: 25px;
 }
-
 a {
   color: black;
-  text-decoration: underline; /* Add underline to links */
 }
-
-a:hover {
-  color: white;
-  background-color: black;
-}
-
 .container a:hover {
-  background-color: black;
-}
-
-/* Media Query for Smartphones */
-@media (max-width: 768px) {
-  .container {
-    font-size: 5vw;
-    padding: 10px 15px 10px 15px;
-  }
+  color: white;
 }
