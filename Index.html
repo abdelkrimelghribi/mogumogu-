@@ -7,22 +7,30 @@
   <link rel="icon" href="Artboard 1Web-icon.svg">
   <title>Abdelkarim El-Ghribi</title>
   <meta name="description" content="Abdelkarim El-Ghribi - Graphic Designer">
-<meta name="keywords" content="graphic designer, Abdelkarim El-Ghribi, design services">
+  <meta name="keywords" content="graphic designer, Abdelkarim El-Ghribi, design services">
 </head>
 <body>
   <div class="container">
     <p>
-    Abdelkarim El-Ghribi<br>Graphic Designer<br><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=abdelkrimelghribi@gmail.com&su=&body=&tf=1" onmouseover="mouseOver()" onmouseout="mouseOut()" target="_blank">abdelkrimelghribi(at)<br>gmail.com</a><br><a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Arena</a><br>+971<br>
-
-
+      Abdelkarim El-Ghribi<br>Graphic Designer<br>
+      <a href="mailto:abdelkrimelghribi@gmail.com" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="changeBackground(this)">abdelkrimelghribi(at)gmail.com</a><br>
+      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank">Arena</a><br>+971
     </p>
   </div>
   <script>
-    function mouseOver() {
-      document.body.style.background = "black";
+    function mouseOver(element) {
+      element.style.color = "white";
     }
-    function mouseOut() {
-      document.body.style.background = "white";
+    
+    function mouseOut(element) {
+      element.style.color = "black";
+    }
+
+    function changeBackground(element) {
+      element.style.backgroundColor = "black";
+      setTimeout(function() {
+        element.style.backgroundColor = "transparent";
+      }, 1000); // Reset background color after 1 second (you can adjust the delay as needed)
     }
   </script>
 </body>
