@@ -19,15 +19,17 @@
   </div>
   <script>
     function mouseOver(element) {
+      element.style.backgroundColor = "black";
       element.style.color = "white";
     }
     
     function mouseOut(element) {
+      element.style.backgroundColor = "transparent";
       element.style.color = "black";
     }
 
     function changeBackground(element) {
-      element.style.backgroundColor = "black";
+      element.style.backgroundColor = "transparent";
       setTimeout(function() {
         element.style.backgroundColor = "transparent";
       }, 1000); // Reset background color after 1 second (you can adjust the delay as needed)
