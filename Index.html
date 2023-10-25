@@ -9,31 +9,13 @@
   <meta name="description" content="Abdelkarim El-Ghribi - Graphic Designer">
   <meta name="keywords" content="graphic designer, Abdelkarim El-Ghribi, design services">
 </head>
-<body>
+<body onmouseover="mouseOver()" onmouseout="mouseOut()">
   <div class="container">
     <p>
       Abdelkarim El-Ghribi<br>Graphic Designer<br>
-      <a href="mailto:abdelkrimelghribi@gmail.com" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="changeBackground(this)">abdelkrimelghribi(at)gmail.com</a><br>
-      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Arena</a><br>+971
+      <a href="mailto:abdelkrimelghribi@gmail.com">abdelkrimelghribi(at)gmail.com</a><br>
+      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank">Arena</a><br>+971
     </p>
   </div>
-  <script>
-    function mouseOver(element) {
-      element.style.backgroundColor = "black";
-      element.style.color = "white";
-    }
-    
-    function mouseOut(element) {
-      element.style.backgroundColor = "transparent";
-      element.style.color = "black";
-    }
-
-    function changeBackground(element) {
-      element.style.backgroundColor = "transparent";
-      setTimeout(function() {
-        element.style.backgroundColor = "transparent";
-      }, 1000); // Reset background color after 1 second (you can adjust the delay as needed)
-    }
-  </script>
 </body>
 </html>
