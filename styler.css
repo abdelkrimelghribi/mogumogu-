@@ -12,13 +12,12 @@
 
 a {
   color: black;
-  text-decoration: underline; /* Add underline to links */
-  transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+  text-decoration: none; /* Remove underline from links */
 }
 
 a:hover {
   color: white;
-  background-color: black; /* Change background color to black on hover */
+  background-color: black;
 }
 
 .container a:hover {
