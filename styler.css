@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- ... (your existing head section) ... -->
-</head>
-<body>
-  <div class="container">
-    <p>
-      Abdelkarim El-Ghribi<br>Graphic Designer<br>
-      <a href="mailto:abdelkrimelghribi@gmail.com" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="changeBackground(this)">abdelkrimelghribi(at)gmail.com</a><br>
-      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank">Arena</a><br>+971
-    </p>
-  </div>
-  <script>
-    function mouseOver(element) {
-      element.style.color = "white";
-    }
-    
-    function mouseOut(element) {
-      element.style.color = "black";
-    }
+@font-face {
+  font-family: standard;
+  src: url(Standard-master/standard-book.otf);
+}
 
-    function changeBackground(element) {
-      element.style.backgroundColor = "black";
-      setTimeout(function() {
-        element.style.backgroundColor = "transparent";
-      }, 1000); // Reset background color after 1 second (you can adjust the delay as needed)
-    }
-  </script>
-</body>
-</html>
+.container {
+  font-family: standard;
+  font-size: 5vw;
+  padding: 10px 35px 10px 35px;
+  text-align: left;
+}
+
+a {
+  color: black;
+  text-decoration: underline; /* Add underline to links */
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+.container a:hover {
+  background-color: black;
+}
+
+/* Media Query for Smartphones */
+@media (max-width: 768px) {
+  .container {
+    font-size: 5vw;
+    padding: 10px 15px 10px 15px;
+  }
+}
