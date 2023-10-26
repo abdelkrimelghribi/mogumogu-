@@ -11,13 +11,18 @@
     a {
       text-decoration: underline;
     }
+    
+    /* CSS rule to display (at)gmail.com on a new line */
+    .email-line-break {
+      display: block;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <p>
       Abdelkarim El-Ghribi<br>Graphic Designer<br>
-      <a href="mailto:abdelkrimelghribi@gmail.com" onmouseover="mouseOver()" onmouseout="mouseOut()">abdelkrimelghribi<br>(at)gmail.com</a><br>
+      <a href="mailto:abdelkrimelghribi@gmail.com" onmouseover="mouseOver()" onmouseout="mouseOut()">abdelkrimelghribi<span class="email-line-break"></span>(at)gmail.com</a><br>
       <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Arena</a><br>+971
     </p>
   </div>
