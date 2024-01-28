@@ -16,12 +16,9 @@
       display: block;
     }
 
-    /* New styles for background GIF */
+    /* Remove background GIF */
     body {
-      background-image: url('GIF23115.gif'); /* Updated file name */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-color: white; /* Set background color to white */
     }
   </style>
 </head>
@@ -36,12 +33,10 @@
   <script>
     function mouseOver() {
       document.body.style.backgroundColor = "black";
-      document.body.style.backgroundImage = "none"; // Hide the background GIF
     }
 
     function mouseOut() {
       document.body.style.backgroundColor = "white";
-      document.body.style.backgroundImage = "url('GIF23115.gif')"; // Show the background GIF
     }
   </script>
 </body>
