@@ -6,26 +6,9 @@
   <link rel="stylesheet" href="styler.css" />
   <link rel="icon" href="Artboard 1Web-icon.svg">
   <title>Abdelkarim El-Ghribi</title>
-  <style>
-    /* Existing styles remain unchanged */
-    a {
-      text-decoration: underline;
-    }
-    
-    .email-line-break {
-      display: none; /* Hide the email line break */
-    }
-
-    body {
-      /* Set background image */
-      background-image: url('original_2145ec3e8893a8f88f57880f9d55f48e.gif');
-      /* Center and scale background image */
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
 </head>
 <body>
+  <div class="overlay" onmouseover="mouseOver()" onmouseout="mouseOut()"></div> <!-- Overlay -->
   <div class="container">
     <p>
       Abdelkarim El-Ghribi<br>Graphic Designer<br>
@@ -33,14 +16,6 @@
       <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Arena</a><br>23.4241° N, 53.8478° E
     </p>
   </div>
-  <script>
-    function mouseOver() {
-      document.body.style.backgroundColor = "black";
-    }
-
-    function mouseOut() {
-      document.body.style.backgroundColor = "white";
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
