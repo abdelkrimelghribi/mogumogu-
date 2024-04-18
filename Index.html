@@ -10,7 +10,7 @@
     /* Existing styles remain unchanged */
     a {
       text-decoration: underline;
-      color: white; /* Link color */
+      color: black; /* Link color */
     }
     
     .email-line-break {
@@ -24,18 +24,15 @@
       background-position: left top; /* Align to the left top */
       background-attachment: fixed;
       background-size: auto 100%; /* Resize width to auto and height to 100% */
-      color: white; /* Font color */
+      color: black; /* Font color */
       margin: 0; /* Remove default margin */
       padding: 0; /* Remove default padding */
+      transition: background-color 0.3s ease; /* Smooth transition for background color change */
     }
 
     /* Additional style for hovering effect */
-    .hover-effect {
-      transition: background-color 0.3s ease;
-    }
-
-    .hover-effect:hover {
-      background-color: black;
+    .container:hover body {
+      background-color: black; /* Change background color to black on hover */
     }
 
     /* Additional style for container */
@@ -47,32 +44,22 @@
     }
 
     .container a {
-      color: white; /* Link color */
+      color: black; /* Link color */
     }
 
     .container a:hover {
-      color: black; /* Link color on hover */
+      color: white; /* Link color on hover */
     }
   </style>
 </head>
 <body>
   <!-- Existing content -->
-  <div class="container hover-effect">
+  <div class="container">
     <p>
       Abdelkarim El-Ghribi<br>Graphic Designer<br>
       <a href="mailto:abdelkrimelghribi@gmail.com">abdelkrimelghribi<span class="email-line-break"></span>(at)gmail(dot)com</a><br>
       <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank">Arena</a><br>23.4241° N, 53.8478° E
     </p>
   </div>
-  <!-- JavaScript code -->
-  <script>
-    function mouseOver() {
-      document.body.style.backgroundColor = "black";
-    }
-
-    function mouseOut() {
-      document.body.style.backgroundColor = "";
-    }
-  </script>
 </body>
 </html>
