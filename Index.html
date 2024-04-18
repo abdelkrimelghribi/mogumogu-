@@ -10,56 +10,34 @@
     /* Existing styles remain unchanged */
     a {
       text-decoration: underline;
-      color: black; /* Link color */
     }
     
     .email-line-break {
       display: none; /* Hide the email line break */
     }
 
-    /* Add background GIF */
+    /* Remove background GIF */
     body {
-      background-image: url('original_2145ec3e8893a8f88f57880f9d55f48e.gif');
-      background-repeat: no-repeat;
-      background-position: left top; /* Align to the left top */
-      background-attachment: fixed;
-      background-size: auto 100%; /* Resize width to auto and height to 100% */
-      color: black; /* Font color */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-      transition: background-color 0.3s ease; /* Smooth transition for background color change */
-    }
-
-    /* Additional style for hovering effect */
-    body:hover {
-      background-color: black !important; /* Change background color to black on hover */
-    }
-
-    /* Additional style for container */
-    .container {
-      font-family: standard;
-      font-size: 5vw;
-      padding: 10px 35px 10px 35px;
-      text-align: left;
-    }
-
-    .container a {
-      color: black; /* Link color */
-    }
-
-    .container a:hover {
-      color: white; /* Link color on hover */
+      background-color: white; /* Set background color to white */
     }
   </style>
 </head>
 <body>
-  <!-- Existing content -->
   <div class="container">
     <p>
       Abdelkarim El-Ghribi<br>Graphic Designer<br>
-      <a href="mailto:abdelkrimelghribi@gmail.com">abdelkrimelghribi<span class="email-line-break"></span>(at)gmail(dot)com</a><br>
-      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank">Arena</a><br>23.4241° N, 53.8478° E
+      <a href="mailto:abdelkrimelghribi@gmail.com" onmouseover="mouseOver()" onmouseout="mouseOut()">abdelkrimelghribi<span class="email-line-break"></span>(at)gmail(dot)com</a><br>
+      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank" onmouseover="mouseOver()" onmouseout="mouseOut()">Arena</a><br>23.4241° N, 53.8478° E
     </p>
   </div>
+  <script>
+    function mouseOver() {
+      document.body.style.backgroundColor = "black";
+    }
+
+    function mouseOut() {
+      document.body.style.backgroundColor = "white";
+    }
+  </script>
 </body>
 </html>
