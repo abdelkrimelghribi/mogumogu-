@@ -25,8 +25,54 @@
       background-attachment: fixed;
       background-size: cover;
       color: white; /* Font color */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
     }
 
     /* Additional style for hovering effect */
     .hover-effect {
-      transition: background
+      transition: background-color 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      background-color: black;
+    }
+
+    /* Additional style for container */
+    .container {
+      font-family: standard;
+      font-size: 5vw;
+      padding: 10px 35px 10px 35px;
+      text-align: left;
+    }
+
+    .container a {
+      color: white; /* Link color */
+    }
+
+    .container a:hover {
+      color: black; /* Link color on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Existing content -->
+  <div class="container hover-effect">
+    <p>
+      Abdelkarim El-Ghribi<br>Graphic Designer<br>
+      <a href="mailto:abdelkrimelghribi@gmail.com">abdelkrimelghribi<span class="email-line-break"></span>(at)gmail(dot)com</a><br>
+      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank">Arena</a><br>23.4241° N, 53.8478° E
+    </p>
+  </div>
+  <!-- JavaScript code -->
+  <script>
+    function mouseOver() {
+      document.body.style.backgroundColor = "black";
+    }
+
+    function mouseOut() {
+      document.body.style.backgroundColor = "";
+    }
+  </script>
+</body>
+</html>
