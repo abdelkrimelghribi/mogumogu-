@@ -43,19 +43,12 @@ a:hover {
   z-index: 0; /* Ensure the GIF is behind other content */
 }
 
-/* Black overlay for hovering effect */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* Hover effect */
+.hover-effect:hover {
+  color: black;
   background-color: black;
-  opacity: 0; /* Initially invisible */
-  z-index: 2; /* Ensure the overlay is above other content */
 }
 
-/* Hover effect */
-.hover-effect:hover + .overlay {
-  opacity: 1; /* Make overlay visible on hover */
+.hover-effect:hover + .centered-gif {
+  opacity: 0; /* Hide GIF on hover */
 }
