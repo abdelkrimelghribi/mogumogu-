@@ -1,91 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styler.css" />
-  <link rel="icon" href="Artboard 1Web-icon.svg">
-  <title>Abdelkarim El-Ghribi</title>
-  <style>
-    /* Import font */
-    @font-face {
-      font-family: standard;
-      src: url(Standard-master/standard-book.otf);
-    }
+@font-face {
+  font-family: standard;
+  src: url(Standard-master/standard-book.otf);
+}
 
-    /* Existing styles from provided CSS file */
-    .container {
-      font-family: standard;
-      font-size: 5vw;
-      padding: 10px 35px 10px 35px;
-      text-align: left;
-    }
+.container {
+  font-family: standard;
+  font-size: 5vw;
+  padding: 10px 35px 10px 35px;
+  text-align: left;
+}
 
-    a {
-      color: black;
-      text-decoration: none; /* Remove underline from links */
-    }
+a {
+  color: black;
+  text-decoration: none; /* Remove underline from links */
+}
 
-    a:hover {
-      color: white;
-      background-color: black; /* Change background color to black on hover */
-    }
+a:hover {
+  color: white;
+  background-color: black; /* Change background color to black on hover */
+}
 
-    .container a:hover {
-      background-color: black; /* Change background color to black on hover for links within the container */
-    }
+.container a:hover {
+  background-color: black; /* Change background color to black on hover for links within the container */
+}
 
-    /* Media Query for Smartphones */
-    @media (max-width: 768px) {
-      .container {
-        font-size: 5vw;
-        padding: 10px 15px 10px 15px;
-      }
-    }
-    
-    /* Add background GIF */
-    body {
-      background-image: url('original_2145ec3e8893a8f88f57880f9d55f48e.gif');
-      background-repeat: no-repeat;
-      background-position: left top; /* Align to the left top */
-      background-attachment: fixed;
-      background-size: auto 100%; /* Resize width to auto and height to 100% */
-      color: black; /* Font color */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-      transition: background-color 0.3s ease; /* Smooth transition for background color change */
-    }
-
-    /* Additional style for hovering effect */
-    .container:hover body {
-      background-color: black !important; /* Change background color to black on hover */
-    }
-
-    /* Additional style for container */
-    .container {
-      font-family: standard;
-      font-size: 5vw;
-      padding: 10px 35px 10px 35px;
-      text-align: left;
-    }
-
-    .container a {
-      color: black; /* Link color */
-    }
-
-    .container a:hover {
-      color: white; /* Link color on hover */
-    }
-  </style>
-</head>
-<body>
-  <!-- Existing content -->
-  <div class="container">
-    <p>
-      Abdelkarim El-Ghribi<br>Graphic Designer<br>
-      <a href="mailto:abdelkrimelghribi@gmail.com">abdelkrimelghribi<span class="email-line-break"></span>(at)gmail(dot)com</a><br>
-      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank">Arena</a><br>23.4241° N, 53.8478° E
-    </p>
-  </div>
-</body>
-</html>
+/* Media Query for Smartphones */
+@media (max-width: 768px) {
+  .container {
+    font-size: 5vw;
+    padding: 10px 15px 10px 15px;
+  }
+}
