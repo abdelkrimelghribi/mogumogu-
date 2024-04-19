@@ -22,64 +22,30 @@
       background-color: black;
       color: white;
     }
-
-    /* Style for the GIF */
-    .centered-gif {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1; /* Ensure the GIF is above the overlay */
-      transition: opacity 0.5s; /* Smooth transition for opacity change */
-    }
-
-    /* Show GIF with reduced opacity on link hover */
-    .hover-effect:hover ~ .centered-gif {
-      opacity: 0.2; /* Reduced opacity to make the GIF appear black */
-    }
-
-    /* Black overlay for hovering effect */
-    .overlay {
-      display: none; /* Initially hidden */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-      z-index: 2; /* Ensure it's above the GIF */
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <p>
       Abdelkarim El-Ghribi<br>Graphic Designer<br>
-      <a href="mailto:abdelkrimelghribi@gmail.com" class="hover-effect">abdelkrimelghribi@gmail.com</a><br>
-      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank" class="hover-effect">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank" class="hover-effect">Arena</a><br>
+      <a href="mailto:abdelkrimelghribi@gmail.com" onmouseover="hoverEffect()" onmouseout="resetEffect()">abdelkrimelghribi@gmail.com</a><br>
+      <a href="https://www.instagram.com/abdelkrimelghribi/" target="_blank" onmouseover="hoverEffect()" onmouseout="resetEffect()">Instagram</a>, <a href="https://www.are.na/abdelkarim-el-ghribi" target="_blank" onmouseover="hoverEffect()" onmouseout="resetEffect()">Arena</a><br>
       23.4241° N, 53.8478° E
     </p>
   </div>
 
   <!-- New GIF -->
-  <img src="original_2145ec3e8893a8f88f57880f9d55f48e.gif" class="centered-gif" alt="Animated GIF">
-
-  <!-- Black overlay for hovering effect -->
-  <div class="overlay" id="overlay"></div>
+  <img src="original_2145ec3e8893a8f88f57880f9d55f48e.gif" id="gif" class="centered-gif" alt="Animated GIF">
 
   <script>
-    // Function to show the black overlay and reduce opacity of GIF on link hover
     function hoverEffect() {
-      document.getElementById('overlay').style.display = 'block';
-      var gif = document.getElementsByClassName('centered-gif')[0];
-      gif.style.opacity = '0.2'; // Reduced opacity to make the GIF appear black
+      document.body.style.backgroundColor = "black";
+      document.getElementById('gif').style.display = 'none';
     }
 
-    // Function to reset opacity of GIF and hide the black overlay
     function resetEffect() {
-      document.getElementById('overlay').style.display = 'none';
-      var gif = document.getElementsByClassName('centered-gif')[0];
-      gif.style.opacity = '1'; // Reset opacity
+      document.body.style.backgroundColor = "white";
+      document.getElementById('gif').style.display = 'block';
     }
   </script>
 </body>
