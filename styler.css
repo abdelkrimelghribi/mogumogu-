@@ -1,3 +1,4 @@
+/* Existing styles remain unchanged */
 @font-face {
   font-family: standard;
   src: url(Standard-master/standard-book.otf);
@@ -37,9 +38,11 @@ a:hover {
 /* Centered GIF */
 .centered-gif {
   position: fixed;
-  top: 100%;
-  left: 100%;
-  transform: translate(-100%, -100%);
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the GIF fill the entire width of the viewport */
+  height: 100%; /* Make the GIF fill the entire height of the viewport */
+  object-fit: cover; /* Ensure the entire viewport is covered */
   z-index: 0; /* Ensure the GIF is behind other content */
 }
 
