@@ -22,17 +22,6 @@
       background-color: black;
       color: white;
     }
-
-    /* Style for the GIF */
-    .centered-gif {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ensure the entire viewport is covered */
-      z-index: -1; /* Ensure the GIF is behind other content */
-    }
   </style>
 </head>
 <body>
@@ -51,10 +40,12 @@
   <script>
     function hoverEffect() {
       document.body.style.backgroundColor = "black";
+      document.getElementById('gif').style.display = 'none';
     }
 
     function resetEffect() {
       document.body.style.backgroundColor = "white";
+      document.getElementById('gif').style.display = 'block';
     }
   </script>
 </body>
